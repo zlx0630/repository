@@ -1,4 +1,4 @@
-# Blog1
+# Blog
 
 ## Freenom 解析控制台
 
