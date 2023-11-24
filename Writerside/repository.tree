@@ -9,5 +9,6 @@
     <toc-element topic="one.md">
         <toc-element topic="two.md"/>
     </toc-element>
+    <toc-element topic="git-开启代理和取消代理.md"/>
     <toc-element topic="Default-topic.md"/>
 </instance-profile>
