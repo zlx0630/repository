@@ -30,6 +30,8 @@
 
 ### 5. 打包发布, 解析放到docs目录下
 
+CNAME 文件不能删除
+
 <seealso>
     <category ref="wrs">
         <a href="https://medium.com/@isphinxs/using-a-custom-domain-name-with-github-pages-c9cdc2084d54">Using a Custom Domain Name with GitHub Pages</a>
