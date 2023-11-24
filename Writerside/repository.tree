@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="repository"
+                 name="repository"
+                 start-page="Default-topic.md">
+
+    <toc-element topic="one.md">
+        <toc-element topic="two.md"/>
+    </toc-element>
+    <toc-element topic="Default-topic.md"/>
+    <toc-element topic="Starter.md">
+        <toc-element topic="Overview.md"/>
+    </toc-element>
+</instance-profile>
