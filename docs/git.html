@@ -1,7 +1,98 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-11-25T03:16:19.049179"><meta name="build-number" content="${buildNumber}">       <title>git 开启代理和取消代理 | repository</title><script id="virtual-toc-data" type="application/json">[{"id":"git","level":0,"title":"git 开启代理和取消代理","anchor":"#git"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="git 开启代理和取消代理 | repository"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="repository Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="git.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="git 开启代理和取消代理 | repository"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "git.html#webpage", "url": "git.html", "name": "git 开启代理和取消代理 | repository", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "repository Help" }</script><!-- End Schema.org --> <!-- Mermaid light/dark themes -->  <link rel="stylesheet" type="text/css" href="mermaid.css">  </head>     <body data-id="git-开启代理和取消代理" data-main-title="git 开启代理和取消代理" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs=""  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>repository  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="git-开启代理和取消代理"  id="git-开启代理和取消代理.md"  >git 开启代理和取消代理</h1>  <section class="chapter"><h2 id="git" data-toc="git">git 开启代理和取消代理</h2><p id="8518731a_179">同时使用 GitHub 和 Gitee，要设置 git 代理配置，在使用 GitHub 时开启代理，使用 Gitee 时取消代理，才能正常进行 git 操作</p><ul class="list _ul" id="8518731a_180"    ><li class="list__item" id="8518731a_181"><p>git 开启代理</p></li></ul><div class="code-block" data-lang="bash"         >
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html data-colors-preset="contrast" data-primary-color="#307FFF" lang="en-US">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta charset="UTF-8">
+    <meta content="noindex" name="robots">
+    <meta content="2023-11-25T03:20:54.1856116" name="built-on">
+    <meta content="${buildNumber}" name="build-number">
+    <title>git 开启代理和取消代理 | repository</title>
+    <script id="virtual-toc-data" type="application/json">[
+        {
+            "id": "git",
+            "level": 0,
+            "title": "git 开启代理和取消代理",
+            "anchor": "#git"
+        }
+    ]</script>
+    <script id="topic-shortcuts" type="application/json"></script>
+    <link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">
+    <link href="https://jetbrains.com/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="https://jetbrains.com/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="https://jetbrains.com/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="https://jetbrains.com/site.webmanifest" rel="manifest">
+    <link color="#000000" href="https://jetbrains.com/safari-pinned-tab.svg" rel="mask-icon">
+    <meta content="#000000" name="msapplication-TileColor"/>
+    <meta content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"
+          name="msapplication-TileImage"/>
+    <meta content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"
+          name="msapplication-square70x70logo"/>
+    <meta content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"
+          name="msapplication-square150x150logo"/>
+    <meta content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"
+          name="msapplication-wide310x150logo"/>
+    <meta content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"
+          name="msapplication-square310x310logo"/>
+    <meta content="" name="image"><!-- Open Graph -->
+    <meta content="git 开启代理和取消代理 | repository" property="og:title"/>
+    <meta content="" property="og:description"/>
+    <meta content="" property="og:image"/>
+    <meta content="repository Help" property="og:site_name"/>
+    <meta content="website" property="og:type"/>
+    <meta content="en_US" property="og:locale"/>
+    <meta content="git.html" property="og:url"/><!-- End Open Graph --><!-- Twitter Card -->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="" name="twitter:site">
+    <meta content="git 开启代理和取消代理 | repository" name="twitter:title">
+    <meta content="" name="twitter:description">
+    <meta content="" name="twitter:creator">
+    <meta content="" name="twitter:image:src"><!-- End Twitter Card --><!-- Schema.org WebPage -->
+    <script type="application/ld+json"> {
+        "@context": "http://schema.org",
+        "@type": "WebPage",
+        "@id": "git.html#webpage",
+        "url": "git.html",
+        "name": "git 开启代理和取消代理 | repository",
+        "description": "",
+        "image": "",
+        "inLanguage": "en-US"
+    }</script><!-- End Schema.org --><!-- Schema.org WebSite -->
+    <script type="application/ld+json"> {
+        "@type": "WebSite",
+        "@id": "/#website",
+        "url": "/",
+        "name": "repository Help"
+    }</script><!-- End Schema.org --> <!-- Mermaid light/dark themes -->
+    <link href="mermaid.css" rel="stylesheet" type="text/css">
+</head>
+<body data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-breadcrumbs=""
+      data-id="git-开启代理和取消代理" data-main-title="git 开启代理和取消代理" data-template="article">
+<div class="wrapper">
+    <main class="panel _main">
+        <header class="panel__header">
+            <div class="container"><h3>repository Help</h3>
+                <div class="panel-trigger"></div>
+            </div>
+        </header>
+        <section class="panel__content">
+            <div class="container">
+                <article class="article" data-shortcut-switcher="inactive"><h1 data-toc="git-开启代理和取消代理"
+                                                                               id="git-开启代理和取消代理.md">git
+                    开启代理和取消代理</h1>
+                    <section class="chapter"><h2 data-toc="git" id="git">git 开启代理和取消代理</h2>
+                        <p id="8518731a_219">同时使用 GitHub 和 Gitee，要设置 git 代理配置，在使用 GitHub 时开启代理，使用
+                            Gitee 时取消代理，才能正常进行 git 操作</p>
+                        <ul class="list _ul" id="8518731a_220">
+                            <li class="list__item" id="8518731a_221"><p>git 开启代理</p></li>
+                        </ul>
+                        <div class="code-block" data-lang="bash">
 git config --global http.proxy http://127.0.0.1:7890
 git config --global https.proxy http://127.0.0.1:7890
-</div><ul class="list _ul" id="8518731a_183"    ><li class="list__item" id="8518731a_184"><p>git 取消代理</p></li></ul><div class="code-block" data-lang="bash"         >
+                        </div>
+                        <ul class="list _ul" id="8518731a_223">
+                            <li class="list__item" id="8518731a_224"><p>git 取消代理</p></li>
+                        </ul>
+                        <div class="code-block" data-lang="bash">
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 </div></section><div class="last-modified"> Last modified: 24 十一月 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="two.html">two</a>   <a class="navigation-links__next" href="default-topic.html">This is the first topic</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>
